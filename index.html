@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RinconVets - Clínica Veterinária e PetShop</title>
+    <link rel="icon" type="image/x-icon" href="./assets/rinconvets-logo.png" />
+    <meta
+      name="description"
+      content="RinconVets - Cuidamos do seu pet com amor e dedicação. Clínica veterinária completa com especialidades em cardiologia, oftalmologia, felinos e PetShop."
+    />
+    <meta name="author" content="Murilo" />
+
+    <meta
+      property="og:title"
+      content="RinconVets - Clínica Veterinária e PetShop"
+    />
+
+    <meta
+      property="og:description"
+      content="Cuidamos do seu pet com amor e dedicação. Especialidades veterinárias e PetShop completo."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+              ></path>
+            </svg>
+            <span>(11) 99999-9999</span>
+          </div>
+          <div class="contact-item">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+            >
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Rua das Flores, 123 - São Paulo</span>
+          </div>
+          <div class="contact-item">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12,6 12,12 16,14"></polyline>
+            </svg>
+            <span>Seg-Sex: 8h-18h | Sáb: 8h-12h</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <img src="./assets/rinconvets-logo.png" alt="RinconVets Logo" />
+          </div>
+
+          <nav class="nav">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#especialidades">Especialidades</a>
+            <a href="#petshop">PetShop</a>
+            <a href="#contato">Contato</a>
+            <button class="btn-primary">Agendar Consulta</button>
+          </nav>
+
+          <button class="mobile-menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <nav class="mobile-nav" id="mobileNav">
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#especialidades">Especialidades</a>
+          <a href="#petshop">PetShop</a>
+          <a href="#contato">Contato</a>
+          <button class="btn-primary">Agendar Consulta</button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+      <div class="hero-bg"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>
+              Cuidamos do seu <span class="highlight-secondary">pet</span> com
+              <span class="block">amor e dedicação</span>
+            </h1>
+            <p>
+              Na RinconVets, oferecemos atendimento veterinário completo com uma
+              equipe especializada e tecnologia de ponta para garantir a saúde e
+              bem-estar dos seus melhores amigos.
+            </p>
+
+            <div class="hero-buttons">
+              <button class="btn-secondary">Agendar Consulta</button>
+              <button class="btn-outline">Conheça Nossos Serviços</button>
+            </div>
+
+            <div class="hero-features">
+              <div class="feature">
+                <div class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="feature-title">Atendimento</div>
+                  <div class="feature-subtitle">Humanizado</div>
+                </div>
+              </div>
+
+              <div class="feature">
+                <div class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path
+                      d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="feature-title">Segurança</div>
+                  <div class="feature-subtitle">Garantida</div>
+                </div>
+              </div>
+
+              <div class="feature">
+                <div class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <circle cx="12" cy="8" r="7"></circle>
+                    <polyline
+                      points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"
+                    ></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="feature-title">Excelência</div>
+                  <div class="feature-subtitle">Reconhecida</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <div class="image-container">
+              <img
+                src="https://images.unsplash.com/photo-1551717743-49959800b1f6?auto=format&fit=crop&w=800&q=80"
+                alt="Veterinário cuidando de pets"
+              />
+              <div class="floating-card">
+                <div class="card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="card-number">+5000</p>
+                  <p class="card-text">Pets Atendidos</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-images">
+            <div class="image-grid">
+              <img
+                src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&w=400&q=80"
+                alt="Veterinário com cachorro"
+                class="grid-img-1"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=400&q=80"
+                alt="Veterinária com gato"
+                class="grid-img-2"
+              />
+            </div>
+            <div class="since-card">
+              <p class="since-year">Desde 2014</p>
+              <p class="since-text">Cuidando com amor</p>
+            </div>
+          </div>
+
+          <div class="about-text">
+            <div class="section-header">
+              <h2>Sobre a <span class="highlight-primary">RinconVets</span></h2>
+              <div class="divider"></div>
+            </div>
+
+            <p class="about-description">
+              A RinconVets nasceu do amor pelos animais e da missão de oferecer
+              cuidados veterinários de excelência. Nossa equipe multidisciplinar
+              é formada por profissionais apaixonados e altamente qualificados.
+            </p>
+
+            <p class="about-description">
+              Combinamos tecnologia de ponta com atendimento humanizado, criando
+              um ambiente acolhedor onde pets e tutores se sentem seguros e bem
+              cuidados.
+            </p>
+
+            <ul class="values-list">
+              <li>Atendimento personalizado e humanizado</li>
+              <li>Equipamentos modernos e tecnologia avançada</li>
+              <li>Equipe especializada e em constante atualização</li>
+            </ul>
+
+            <div class="stats-grid">
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <p class="stat-value">15+</p>
+                <p class="stat-label">Profissionais</p>
+              </div>
+
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12,6 12,12 16,14"></polyline>
+                  </svg>
+                </div>
+                <p class="stat-value">Seg-Sáb</p>
+                <p class="stat-label">Atendimento</p>
+              </div>
+
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <circle cx="12" cy="8" r="7"></circle>
+                    <polyline
+                      points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"
+                    ></polyline>
+                  </svg>
+                </div>
+                <p class="stat-value">10+</p>
+                <p class="stat-label">Anos de Experiência</p>
+              </div>
+
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="stat-value">5000+</p>
+                <p class="stat-label">Pets Atendidos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section id="especialidades" class="specialties">
+      <div class="container">
+        <div class="section-header-center">
+          <h2>Nossas <span class="highlight-primary">Especialidades</span></h2>
+          <div class="divider-center"></div>
+          <p class="section-description">
+            Oferecemos uma ampla gama de serviços veterinários especializados,
+            com profissionais qualificados e equipamentos modernos para cuidar
+            da saúde do seu pet com excelência.
+          </p>
+        </div>
+
+        <div class="specialties-grid">
+          <div class="specialty-card">
+            <div class="specialty-image">
+              <img
+                src="./assets/clinica-pequenos-animais.png"
+                alt="Clínica de Pequenos Animais"
+              />
+            </div>
+            <div class="specialty-content">
+              <h3>Clínica de Pequenos Animais</h3>
+              <p>
+                Atendimento completo para cães e gatos com consultas
+                preventivas, vacinação e cuidados gerais.
+              </p>
+              <ul class="specialty-features">
+                <li>Consultas preventivas</li>
+                <li>Vacinação completa</li>
+                <li>Check-ups regulares</li>
+              </ul>
+              <a href="#" class="specialty-link">
+                Saiba mais
+                <svg
+                  class="arrow-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12,5 19,12 12,19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="specialty-card">
+            <div class="specialty-image">
+              <img
+                src="./assets/cardiologia.png"
+                alt="Cardiologia Veterinária"
+              />
+            </div>
+            <div class="specialty-content">
+              <h3>Cardiologia Veterinária</h3>
+              <p>
+                Diagnóstico e tratamento de doenças cardíacas com equipamentos
+                de última geração.
+              </p>
+              <ul class="specialty-features">
+                <li>Ecocardiograma</li>
+                <li>Eletrocardiograma</li>
+                <li>Tratamento especializado</li>
+              </ul>
+              <a href="#" class="specialty-link">
+                Saiba mais
+                <svg
+                  class="arrow-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12,5 19,12 12,19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="specialty-card">
+            <div class="specialty-image">
+              <img src="./assets/oftalmologia.png" alt="Oftalmologia" />
+            </div>
+            <div class="specialty-content">
+              <h3>Oftalmologia</h3>
+              <p>
+                Cuidados especializados para a saúde ocular dos seus pets com
+                tecnologia avançada.
+              </p>
+              <ul class="specialty-features">
+                <li>Exames oftalmológicos</li>
+                <li>Cirurgias oculares</li>
+                <li>Tratamento de doenças</li>
+              </ul>
+              <a href="#" class="specialty-link">
+                Saiba mais
+                <svg
+                  class="arrow-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12,5 19,12 12,19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="specialty-card">
+            <div class="specialty-image">
+              <img
+                src="./assets/especializacao-felinos.png"
+                alt="Especialização em Felinos"
+              />
+            </div>
+            <div class="specialty-content">
+              <h3>Especialização em Felinos</h3>
+              <p>
+                Atendimento especializado exclusivo para gatos, com ambiente
+                adaptado e cuidados específicos.
+              </p>
+              <ul class="specialty-features">
+                <li>Ambiente cat-friendly</li>
+                <li>Medicina felina</li>
+                <li>Comportamento felino</li>
+              </ul>
+              <a href="#" class="specialty-link">
+                Saiba mais
+                <svg
+                  class="arrow-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12,5 19,12 12,19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="specialty-card">
+            <div class="specialty-image">
+              <img src="./assets/cirurgias.png" alt="Castração e Cirurgias" />
+            </div>
+            <div class="specialty-content">
+              <h3>Castração e Cirurgias</h3>
+              <p>
+                Centro cirúrgico seguro para procedimentos de castração e
+                cirurgias gerais.
+              </p>
+              <ul class="specialty-features">
+                <li>Centro cirúrgico</li>
+                <li>Anestesia segura</li>
+                <li>Pós-operatório completo</li>
+              </ul>
+              <a href="#" class="specialty-link">
+                Saiba mais
+                <svg
+                  class="arrow-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12,5 19,12 12,19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="specialty-card">
+            <div class="specialty-image">
+              <img src="./assets/odontologia.png" alt="Odontologia" />
+            </div>
+            <div class="specialty-content">
+              <h3>Odontologia</h3>
+              <p>
+                Cuidados especializados para a saúde bucal dos seus pets com
+                tecnologia avançada.
+              </p>
+              <ul class="specialty-features">
+                <li>Exames odontológicos</li>
+                <li>Cirurgias odontológicas</li>
+                <li>Tratamento de doenças</li>
+              </ul>
+              <a href="#" class="specialty-link">
+                Saiba mais
+                <svg
+                  class="arrow-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12,5 19,12 12,19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PetShop Section -->
+    <section id="petshop" class="petshop">
+      <div class="container">
+        <div class="section-header-center">
+          <h2>Nosso <span class="highlight-primary">PetShop</span></h2>
+          <div class="divider-center"></div>
+          <p class="section-description">
+            Além dos cuidados veterinários, oferecemos serviços de estética e
+            uma loja completa com produtos selecionados para o bem-estar do seu
+            pet.
+          </p>
+        </div>
+
+        <div class="petshop-content">
+          <div class="petshop-image">
+            <img src="./assets/banho-tosa.png" alt="Banho e tosa" />
+            <div class="petshop-floating-card">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path
+                    d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                  ></path>
+                  <line x1="3" y1="6" x2="21" y2="6"></line>
+                  <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+              </div>
+              <div>
+                <p class="card-title">Agendamento</p>
+                <p class="card-subtitle">Online disponível</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="petshop-services">
+            <h3>Serviços de Estética Pet</h3>
+
+            <div class="services-list">
+              <div class="service-item">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <polygon
+                      points="22,3 2,3 10,12.46 10,19 14,21 14,12.46 22,3"
+                    ></polygon>
+                  </svg>
+                </div>
+                <div class="service-content">
+                  <h4>Banho Completo</h4>
+                  <p>Banho com produtos de qualidade, secagem e perfumização</p>
+                  <span class="service-price">A partir de R$ 30</span>
+                </div>
+              </div>
+
+              <div class="service-item">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path
+                      d="M6 3h5l3 3v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"
+                    ></path>
+                    <path d="M14 6h4l2 2v9a2 2 0 0 1-2 2h-4"></path>
+                  </svg>
+                </div>
+                <div class="service-content">
+                  <h4>Tosa Higiênica</h4>
+                  <p>Tosa especializada para higiene e conforto do seu pet</p>
+                  <span class="service-price">A partir de R$ 25</span>
+                </div>
+              </div>
+
+              <div class="service-item">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <rect
+                      x="2"
+                      y="3"
+                      width="20"
+                      height="14"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <div class="service-content">
+                  <h4>Produtos Diversos</h4>
+                  <p>Coleiras, brinquedos, rações e acessórios de qualidade</p>
+                  <span class="service-price">Consulte preços</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="products-section">
+          <h3>Produtos Disponíveis em Nossa Loja</h3>
+
+          <div class="products-grid">
+            <div class="product-category">
+              <h4>Alimentação</h4>
+              <ul>
+                <li>Rações Premium</li>
+                <li>Petiscos Naturais</li>
+                <li>Suplementos</li>
+              </ul>
+            </div>
+
+            <div class="product-category">
+              <h4>Acessórios</h4>
+              <ul>
+                <li>Coleiras e Guias</li>
+                <li>Camas e Almofadas</li>
+                <li>Transportadoras</li>
+              </ul>
+            </div>
+
+            <div class="product-category">
+              <h4>Brinquedos</h4>
+              <ul>
+                <li>Brinquedos Interativos</li>
+                <li>Pelúcias</li>
+                <li>Mordedores</li>
+              </ul>
+            </div>
+
+            <div class="product-category">
+              <h4>Higiene</h4>
+              <ul>
+                <li>Shampoos Especiais</li>
+                <li>Escovas</li>
+                <li>Produtos de Limpeza</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="products-cta">
+            <p>
+              Trabalhamos apenas com marcas de confiança e produtos de alta
+              qualidade
+            </p>
+            <button class="btn-primary">Ver Catálogo Completo</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact">
+      <div class="container">
+        <div class="section-header-center">
+          <h2>Entre em <span class="highlight-primary">Contato</span></h2>
+          <div class="divider-center"></div>
+          <p class="section-description">
+            Estamos sempre prontos para atender você e seu pet. Entre em contato
+            conosco para agendar consultas ou tirar dúvidas.
+          </p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Informações de Contato</h3>
+
+            <div class="contact-cards">
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Telefone</h4>
+                  <p>(11) 99999-9999</p>
+                  <p>(11) 3333-4444</p>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    ></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4>E-mail</h4>
+                  <p>contato@rinconvets.com.br</p>
+                  <p>info@rinconvets.com.br</p>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path
+                      d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                    ></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Endereço</h4>
+                  <p>Rua das Flores, 123</p>
+                  <p>São Paulo - SP, 01234-567</p>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12,6 12,12 16,14"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Horários</h4>
+                  <p>Seg-Sex: 8h às 18h</p>
+                  <p>Sáb: 8h às 12h</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-card">
+              <h4>Siga-nos nas Redes Sociais</h4>
+              <div class="social-links">
+                <a href="#">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <rect
+                      x="2"
+                      y="2"
+                      width="20"
+                      height="20"
+                      rx="5"
+                      ry="5"
+                    ></rect>
+                    <path
+                      d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                    ></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path
+                      d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <div class="form-container">
+              <h3>Envie uma Mensagem</h3>
+
+              <form>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Seu Nome</label>
+                    <input type="text" placeholder="Digite seu nome" />
+                  </div>
+                  <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" placeholder="seu@email.com" />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Telefone</label>
+                    <input type="tel" placeholder="(11) 99999-9999" />
+                  </div>
+                  <div class="form-group">
+                    <label>Tipo de Serviço</label>
+                    <select>
+                      <option>Consulta Veterinária</option>
+                      <option>Banho e Tosa</option>
+                      <option>Cirurgia</option>
+                      <option>Outro</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Nome do Pet</label>
+                  <input type="text" placeholder="Nome do seu pet" />
+                </div>
+
+                <div class="form-group">
+                  <label>Mensagem</label>
+                  <textarea
+                    placeholder="Descreva o que você precisa ou conte-nos mais sobre seu pet..."
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary full-width">
+                  Enviar Mensagem
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img
+                src="/lovable-uploads/a8462457-b272-4574-87b5-9d39fd2ec900.png"
+                alt="RinconVets Logo"
+              />
+            </div>
+            <p>
+              Cuidamos do seu pet com amor, dedicação e profissionalismo. Nossa
+              missão é garantir a saúde e felicidade dos seus melhores amigos.
+            </p>
+            <div class="footer-social">
+              <a href="#">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="#">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Nossos Serviços</h3>
+            <ul>
+              <li><a href="#">Clínica Geral</a></li>
+              <li><a href="#">Cardiologia</a></li>
+              <li><a href="#">Oftalmologia</a></li>
+              <li><a href="#">Especialização Felina</a></li>
+              <li><a href="#">Cirurgias</a></li>
+              <li><a href="#">Banho e Tosa</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Links Rápidos</h3>
+            <ul>
+              <li><a href="#sobre">Sobre Nós</a></li>
+              <li><a href="#especialidades">Especialidades</a></li>
+              <li><a href="#petshop">PetShop</a></li>
+              <li><a href="#contato">Contato</a></li>
+              <li><a href="#">Agendamento</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Contato</h3>
+            <div class="footer-contact">
+              <div class="contact-item">
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
+                <div>
+                  <p>(11) 99999-9999</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <div>
+                  <p>contato@rinconvets.com.br</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <div>
+                  <p>Rua das Flores, 123</p>
+                  <p>São Paulo - SP</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="hours-card">
+              <h4>Horários de Funcionamento</h4>
+              <div class="hours">
+                <p>Seg-Sex: 8h às 18h</p>
+                <p>Sábado: 8h às 12h</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-bottom-content">
+            <p>© 2024 RinconVets. Todos os direitos reservados.</p>
+            <div class="made-with-love">
+              <span>Feito com</span>
+              <svg
+                class="heart-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                ></path>
+              </svg>
+              <span>para pets e seus tutores</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const mobileNav = document.getElementById("mobileNav");
+        const mobileMenu = document.querySelector(".mobile-menu");
+
+        mobileNav.classList.toggle("active");
+        mobileMenu.classList.toggle("active");
+      }
+
+      // Smooth scrolling para links âncora
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+
+            // Fechar menu mobile se estiver aberto
+            const mobileNav = document.getElementById("mobileNav");
+            const mobileMenu = document.querySelector(".mobile-menu");
+            if (mobileNav.classList.contains("active")) {
+              mobileNav.classList.remove("active");
+              mobileMenu.classList.remove("active");
+            }
+          }
+        });
+      });
+
+      // Header scroll effect
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector(".header");
+        if (window.scrollY > 100) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>
